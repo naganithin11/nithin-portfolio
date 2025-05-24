@@ -1,9 +1,37 @@
 :root {
-  --primary-color: #DC2626;
+  --primary-color: #d65822;
   --primary-color-light: rgba(214, 88, 34, 0.08);
+  --glass-bg: rgba(252, 186, 3, 0.1);
 }
-.dynamic-primary { color: var(--primary-color) !important; }
-.bg-dynamic-primary { background-color: var(--primary-color) !important; }
-.border-dynamic-primary { border-color: var(--primary-color) !important; }
-.bg-primary-light { background: var(--primary-color-light) !important; }
-body { font-family: 'Schibsted Grotesk', sans-serif; }
+.dynamic-primary {
+  color: var(--primary-color) !important;
+}
+.bg-dynamic-primary {
+  background-color: var(--primary-color) !important;
+}
+.border-dynamic-primary {
+  border-color: var(--primary-color) !important;
+}
+.bg-primary-light {
+  background: var(--primary-color-light) !important;
+}
+.glass-bg {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(2px);
+}
+.hero-bg {
+  background: linear-gradient(120deg, var(--primary-color-light) 0%, #fff 100%);
+}
+.dark .hero-bg {
+  background: #000 !important;
+}
+.footer-bg-smoke {
+  background: linear-gradient(120deg, var(--primary-color-light) 0%, #fff 100%);
+}
+.dark .footer-bg-smoke {
+  background: linear-gradient(
+    120deg,
+    rgba(252, 186, 3, 0.1) 0%,
+    #000 100%
+  ) !important;
+}
