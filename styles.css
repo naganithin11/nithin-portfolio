@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #DC2626;
+  --primary-color-light: rgba(214, 88, 34, 0.08);
+}
+.dynamic-primary { color: var(--primary-color) !important; }
+.bg-dynamic-primary { background-color: var(--primary-color) !important; }
+.border-dynamic-primary { border-color: var(--primary-color) !important; }
+.bg-primary-light { background: var(--primary-color-light) !important; }
+body { font-family: 'Schibsted Grotesk', sans-serif; }
